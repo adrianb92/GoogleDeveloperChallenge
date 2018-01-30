@@ -26,7 +26,6 @@ function makeGrid() {
   Array.prototype.forEach.call(cells, function(cell) {
     cell.addEventListener('mousedown', function(evt) {
       color = colorPicker.val();
-      console.log(color);
       $(this).attr("bgcolor", color);
     })
     cell.addEventListener('dragstart', function(evt) {
